@@ -1,0 +1,31 @@
+.input-field{
+    position: relative;
+    padding-bottom: 10px;
+}
+.input-field span {
+    color:red;
+    text-align: left;
+   
+}
+.input-field label{
+    padding-bottom: 5px;
+    font-size: 14px;
+    color:#7E838E
+}
+.input-field input::placeholder{
+    font-size: 14px;
+}
+.Sigin-button-fd-g{
+    border: none;
+    background: none;
+    width: 100%;
+    padding: 8px 0;
+    border-radius: 6px;
+    color: #ffff;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.Sigin-button-fd-g i {
+    padding-right: 10px;
+ 
+}

@@ -1,0 +1,14 @@
+.price-card p{
+    color:#7D87A0;
+    font-size: 15px;
+    text-transform: capitalize;
+    padding-bottom: -51px !important;
+    display: flex;
+    justify-content: space-between;
+}
+.price-card p span{
+    color:#2B3445;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 600;
+}

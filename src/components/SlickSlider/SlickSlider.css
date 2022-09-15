@@ -1,0 +1,125 @@
+
+.headingSlider .slick-dots{
+   position: absolute;
+   bottom:-30%;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.headingSlider .slick-dots li{
+   width: 17px;
+   height: 17px;
+   border: 1px solid #0F3460;
+   border-radius: 50%;
+}
+.headingSlider .slick-dots .slick-active::after{
+    content: '';
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 10px;
+    height: 10px;
+    background: #0F3460;
+    border-radius: 50%;
+
+}
+.headingSlider .slick-dots li button{
+   opacity: 0;
+}
+.headingSlider .slider-text h1{
+   font-size:60px ;
+}
+
+
+
+
+
+/* media responsiv */
+
+@media(max-width: 424.98px) {
+   .headingSlider .slider-text h1{
+      font-size:20px;
+   }
+   .headingSlider .slider-text p{
+
+      font-size:13px;
+   }
+
+}
+
+@media (min-width:425px) and (max-width: 575.98px) {
+   .headingSlider .slider-text h1{
+      font-size:30px;
+   }
+   .headingSlider .slider-text p{
+
+      font-size:14px;
+   }
+
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+   .headingSlider .slider-text h1{
+      font-size:40px;
+   }
+   .headingSlider .slider-text p{
+
+      font-size:15px;
+   }
+
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+   .headingSlider .slider-text h1{
+      font-size:50px;
+   }
+   .headingSlider .slider-text p{
+
+      font-size:17px;
+   }
+
+}
+@media (min-width: 768px) and (max-width: 992.98px) {
+   .headingSlider .slider-text h1{
+      font-size:50px;
+   }
+   .headingSlider .slider-text p{
+
+      font-size:17px;
+   }
+
+}
+
+/* card slider start  */
+.slick-prev, .slick-next {
+   font-size: 0;
+   line-height: 0;
+   position: absolute;
+   top: 50%;
+   display: block;
+   width: 20px;
+   height: 20px;
+   padding: 0;
+   transform: translate(0, -50%);
+   cursor: pointer;
+   color: transparent;
+   border: none;
+   outline: none;
+   background: transparent;
+   z-index: 999;
+}
+.slick-next{
+   right:16px;
+}
+.slick-prev{
+   left:-8px;
+}
+.slick-prev:before , .slick-next:before {
+   font-family: 'slick';
+   font-size: 40px;
+   line-height: 1;
+   opacity:1;
+   color: #0F3460;
+   position: relative;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}

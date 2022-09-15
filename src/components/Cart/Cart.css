@@ -1,0 +1,75 @@
+.cart{
+    overflow: hidden;
+}
+.cart .cart-right .totalAmaount{
+    border-bottom: 1px solid #ECEFF1;
+}
+.cart .cart-right .totalAmaount p{
+    color:#7D87A0;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.cart .cart-right .totalAmaount h5{
+    color:#2B3445;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.cart .cart-right .apply-voucher{
+    border-bottom: 1px solid #ECEFF1;
+}
+.cart .cart-right .shipping-estimates p,
+.cart .cart-right .apply-voucher p{
+    color:#2B3445;
+    font-size: 16px;
+    margin: 20px 0;
+    
+  
+}
+.cart .cart-right .apply-voucher p span {
+    color:#E94560;
+    background: #FFE1E6;
+    padding: 3px 10px;
+    font-weight: 600;
+    margin-left: 5px;
+    font-size: 13px;
+    border-radius: 2px;
+    
+}
+ .input-filud{
+    margin: 20px 0;
+}
+  .input-filud button{
+    width: 100%;
+    border: 1px solid #E94560;
+    background: transparent;
+    padding: 5px 0;
+    border-radius: 5px;
+    color:#E94560;
+    font-weight: 500;
+    transition:.4s;
+
+}
+  .input-filud button:hover{
+    background: #E94560;
+    color:#fff
+}
+  .input-filud .CheckoutNow{
+    background: #E94560;
+    color: #fff;
+}
+.button-perent button{
+    position: relative;
+}
+.buttonShape{
+    position: absolute;
+    top: 50%;
+    left:100%;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 5px;
+   
+}
+.input-filud label{
+    font-size: 14px;
+    color:#2B3445
+}

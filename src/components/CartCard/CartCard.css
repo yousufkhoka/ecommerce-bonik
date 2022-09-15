@@ -1,0 +1,22 @@
+/* disabled-button */
+
+.cart-card .items-right .items-button{
+    position: relative;
+    text-align:right;
+    
+   
+}
+.cart-card .items-right .items-button .disabled-button{
+    position: absolute;
+    top:0;
+    left: 0;
+    background: #E0E0E0;
+    border:none;
+    color:#7D879C;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    line-height: 32px;
+
+
+}

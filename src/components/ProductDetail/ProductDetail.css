@@ -1,0 +1,38 @@
+.product-detail ul{
+    padding-left: 0;
+}
+.product-detail h4{
+    color:#2B3445;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif
+}
+.product-detail p{
+    color:#2B3445;
+    font-family: 'Roboto', sans-serif
+}
+.product-detail p span{
+    color:#B6BBC7;
+}
+.product-detail h3{
+    color:#E94560;
+    margin-top: -20px;
+    font-weight: 700;
+    margin-bottom: -2px;
+    font-family: 'Roboto', sans-serif
+   
+}
+.product-detail h6{
+    color:#2B3445;
+    font-size: 14px;
+    padding-bottom: 16px;
+}
+.add-to-cart{
+    background: #E94560;
+    border: none;
+    padding: 10px 25px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 6px;
+    color:#ffff;
+}
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */

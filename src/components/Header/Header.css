@@ -1,0 +1,248 @@
+ul{
+padding-bottom: 0 ;
+padding-left: 0;
+}
+/*  head part start */
+.head{
+    background: #0F3460;
+    padding-top: 10px;
+    position: relative;
+}
+.head ul li{
+    color:#ffff;    
+    font-family: 'Roboto', sans-serif;
+   
+    cursor: pointer;
+}
+.head .left-site li i{
+   color:#f1f1f1;
+   margin-right: 8px;
+
+}
+.head .left-site li {
+    font-size: 13px;
+    font-weight: 400;
+    margin-right: 15px;
+}
+
+.head .right-site li{
+  margin:0 10px;
+  font-size: 13px;
+  font-weight: 400;
+  padding-right: 10px;
+  transition: .4s;
+}
+.head .right-site li:hover{
+    color:rgb(191, 14, 14)
+}
+.head .right-site .help-need{
+    margin-right: 10px;
+}
+.head .country-money,
+.head .country-name{
+    position: relative;
+    
+}
+.head .countryName-component{
+   position: absolute;
+   top:110%;
+   left:-110%;
+   max-width: 40px;
+   text-align: left;
+   z-index: 99;
+}
+.head .countryName-component ul li:hover{
+  background: #dddd;
+}
+.head .countryMoney-component ul li:hover{
+    background: #dddd;
+  }
+.head .countryMoney-component{
+    position: absolute;
+    top:110%;
+    left:-110%;
+    max-width: 40px;
+    text-align: left;
+    z-index: 99;
+}
+
+/* head part end */
+/* seseach part start  */
+.seach-header{
+    padding: 15px 0;
+}
+
+.seach-header .seach-bar{
+   
+    position: relative;   
+   
+}
+.seach-header .seach-bar input{
+    position: relative;
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%;
+    padding: 8px 200px 8px 30px ;
+    border: 1.5px solid #0b0a0a33;
+    border-radius: 50px;
+    z-index: 9;
+        
+}
+.seach-header .seach-bar i{
+    color: #7d879c;
+    
+}
+.seach-header .seach-bar .searchBar{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%)
+}
+.seach-header .seach-bar span{
+    color: rgb(125, 135, 156);
+    width: 20%;
+    display: flex;
+    align-items: center;
+    border-left: 1px solid  #0b0a0a33;
+    position: absolute;
+    top:50%;
+    right: 10px;
+    transform: translateY(-50%);
+    padding: 7px 0;
+    z-index: 9999;
+}
+.seach-header .seach-bar span i{
+    width: 15%;
+}
+.seach-header .seach-bar span label{
+    width: 85%;
+}
+.seach-header .seach-bar span ul{
+    position: absolute;
+    top:40px;
+    right: -10px;
+    background: #0F3460;
+    text-align: left;
+    width: 180px;
+    padding-left: 0!important;
+}
+.seach-header .seach-bar span ul li{
+    padding: 6px 15px;
+}
+
+.seach-header .seach-bar span ul li:hover{
+    color: #E94560;
+    background:  #F6F9FC;
+}
+
+
+.seach-header .seach-bar:hover input{
+    border-color:  rgb(125, 135, 156);
+
+} 
+.seach-header .seach-bar input:focus {
+    border-color:#E94560;
+}
+.outline-button{
+   width: 45px;
+   height: 45px;
+   background:#F3F5F9 ;
+   border-radius: 50%;
+   text-align: center;
+   line-height: 45px;
+}
+/* seseach part end  */
+.left-navbart ul{
+    padding-bottom: 0;
+}
+.left-navbart ul li{
+    transition: .4s;
+    cursor: pointer;
+    padding-bottom: 10px;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.left-navbart ul li .navlink{
+    text-decoration: none;
+    color:#000;
+}
+.left-navbart ul li .navlink:hover{
+    color:#E94560;
+}
+.left-navbart ul li ul{
+    position: absolute;
+    top:100%;
+    left: -50%;
+    background: #ffff;
+    z-index: 9;
+    width: 210px;
+    border-radius: 7px;
+    display: none; 
+    padding-left: 0;
+    padding-bottom: 0;
+}
+.left-navbart ul li ul li{
+    padding-left: 20px;
+}
+.left-navbart ul li:hover{
+    color:#E94560;
+}
+.left-navbart ul li:hover ul{
+   display: block;
+    
+
+}
+.left-navbart ul li ul li:hover{
+    background:  #F6F9FC;
+    color: #E94560;
+     
+ 
+ }
+ /* nav button */
+
+ .NavButton{
+    position: relative;
+ }
+
+ .NavButton  .Nav-categoryShow{
+    position: absolute;
+    top:125%;
+    left:5%;
+    padding-left: 0;
+    width: 285px;
+    background: #ffff;
+    z-index: 99;
+  
+
+ }
+ .NavButton .home-category{
+    position: absolute;
+    top: 1%;
+    left:5%;
+    padding-left: 0;
+    width: 285px;
+    background: #ffff;
+    z-index: 999;
+ }
+ 
+ .NavButton ul li{
+    padding: 6px 10px;
+    cursor: pointer;
+    color: rgb(125, 135, 156);
+    font-size: 14px;
+    
+ }
+ .NavButton ul li:hover{
+    background: #e9456042;
+    color:#E94560;
+    
+ }
+ .left-navbart ul li ul{
+    z-index: 9999;
+ }
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+

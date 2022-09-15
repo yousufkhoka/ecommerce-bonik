@@ -1,0 +1,27 @@
+
+.button-nav-group button{
+    
+    border: none;
+    padding: 6px 25px;
+    border-radius: 18px;
+   
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+
+}
+.button-nav-group .item{
+    position: relative;
+}
+.button-nav-group .lineShape{
+    width: 170px;
+    height: 5px;
+   
+    position: absolute;
+    top: 50%;
+    left:-110px;
+    transform:translateY(-50%);
+    z-index: 1;
+}
+

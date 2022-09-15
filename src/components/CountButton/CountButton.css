@@ -1,0 +1,31 @@
+
+.count-button .dicrement{
+    height: 55px;
+    text-align: center;
+}
+.count-button button{
+    border:1px solid #f5577181;
+    background: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    color: #E94560;
+    font-size: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.count-button span{
+   
+   color:#2B3445;
+   font-size: 15px;
+   font-weight: 600;
+
+   
+}
+.count-button button:hover{
+   background: #E94560;
+   color:#ffff
+}

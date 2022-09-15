@@ -1,0 +1,31 @@
+.product-card .card-top span{
+    font-size: 12px;
+    background: #E94560;
+    border-radius: 20px;
+    color:#fff;
+    display: inline-block;
+    padding:4px 8px
+
+}
+.product-card  .itemsIcon ul{
+  opacity: 0;
+  visibility: hidden;
+}
+.product-card:hover  .itemsIcon ul{
+    opacity: 1;
+    visibility: visible;
+}
+.product-card .buttom-left p{
+    font-size: 14px;
+    color:#6e7685;
+    line-height: 1px;
+    text-transform: capitalize;
+}
+.product-card .buttom-left ul{
+    padding-left: 0;
+}
+.product-card .buttom-left span{
+    margin-right: 15px;
+    font-size: 16px;
+    font-weight: 700;
+}
