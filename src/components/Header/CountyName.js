@@ -12,8 +12,8 @@ import Card from '@mui/material/Card';
     
           <ul>
             {
-                countrys.map(country =><li style={{color:'black', padding:'7px 0'}} onClick= {()=>hendlesetName(country)}>
-                    <img src={country.flag} alt=""
+                countrys.map(country =><li style={{color:'black', padding:'7px 15px'}} onClick= {()=>hendlesetName(country)}>
+                    <img  src={country.flag} alt=""
                      style={{marginRight:'8px'}} />
                     
                     {country.name}

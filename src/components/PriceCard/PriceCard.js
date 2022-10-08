@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { productContext } from '../../App';
 import './PriceCard.css'
 
-const PriceCard = () => {
+const PriceCard = ({statement}) => {
     const [cardProducts , setCartProducts] = useContext(productContext)
 
     const total =  cardProducts.reduce((value , pd) => value + pd.price*pd.quantity,0)
@@ -18,7 +18,7 @@ const PriceCard = () => {
             <p>Discount: <span>-</span></p>
             </div>
             <h4 className='text-end my-2 pb-2' >{`$${cureantPrice}.00`}</h4>
-            <form>
+           {statement && <form>
                 <div className="input-filud">
                     <input className='form-control' type="text" placeholder='Voucher'/>
 
@@ -27,7 +27,7 @@ const PriceCard = () => {
                     <button>Apply Voucher</button>
 
                 </div>
-            </form>
+            </form>}
 
         </div>
      

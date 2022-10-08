@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Header from '../Header/Header';
 import PriceCard from '../PriceCard/PriceCard';
 import ShippingAddress from '../ShippingAddress/ShippingAddress';
 import './Checkout.css'
@@ -39,6 +40,8 @@ const shapeButtonNormal  = {
 }
 const Checkout = () => {
     return (
+        <>
+        <Header></Header>
         <div className='checkout container-fluid cart px-4 py-4' style={{background:'#F6F9FC'}}>
             <div className="row">
                 <div className="col-xl-6 col-sm-6 col-10">
@@ -103,12 +106,13 @@ const Checkout = () => {
                
             </div>
             <div className="col-lg-4">
-                <PriceCard></PriceCard>
+                <PriceCard statement={true}></PriceCard>
             </div>
           </div>
 
          
         </div>
+        </>
     );
 };
 

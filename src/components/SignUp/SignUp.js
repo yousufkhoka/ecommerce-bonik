@@ -6,9 +6,10 @@ import { useForm } from "react-hook-form";
 import './SingUp.css'
 import { Link } from 'react-router-dom';
 import Checkbox from '@mui/material/Checkbox';
-import useWindowWidth from '../Hooks/useWindowWidth';
 import { submitFacebookSigin, submitGoogleSigin } from './Firebase.auth';
 import { firebaseInitializeApp } from './Firebase.auth';
+import { useReducer } from 'react';
+import { initialiUser, Reducer,USER_SIGN_IN_UP,USER_SIGN_OUT } from '../Reducer/Readucer';
 
 
    
@@ -25,20 +26,19 @@ const style = {
     
   };
 
-const SignUp = () => {
+const SignUp = ({dispatch , setUser}) => {
     firebaseInitializeApp()
     const [sigInOrUp , setSigInOrUp] = useState(false)
-     const [user , setUser] = useState({
-        name:'',
-        password:'',
-        email:'',
-     })
+    
+     
 
  const hendleGoogleSigni= () =>{
     submitGoogleSigin()
     .then(res =>{
-        setUser(res)
-   
+        setUser(res) 
+        console.log(res)
+        dispatch({type:USER_SIGN_IN_UP , ...res})
+        
     })
  }
  const hendleFacebookSigni = () => {
@@ -49,6 +49,7 @@ const SignUp = () => {
     })
     
  }
+
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = data =>{};
   

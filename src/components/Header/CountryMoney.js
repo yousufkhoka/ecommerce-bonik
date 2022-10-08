@@ -12,7 +12,7 @@ import Card from '@mui/material/Card';
     
           <ul>
             {
-                countrys.map(country =><li style={{color:'black', padding:'7px 0'}} onClick= {()=>hendlesetMoney(country)}>
+                countrys.map(country =><li style={{color:'black', padding:'7px 15px'}} onClick= {()=>hendlesetMoney(country)}>
                     <img src={country.flag} alt=""
                      style={{marginRight:'8px'}} />
                     

@@ -5,7 +5,7 @@ import './ProductDetail.css'
 import CountButton from '../CountButton/CountButton';
 import { productContext } from '../../App';
 
-const ProductDetail = ({product}) => {
+const ProductDetail = ({product,styleImg}) => {
     const {img,name,seller,price,quantity} = product
     console.log(product)
    const styleDflex = {
@@ -37,7 +37,7 @@ const ProductDetail = ({product}) => {
 
     return (
         <div className='product-detail'>
-            <div className="row justify-content-between">
+            <div className="row justify-content-between align-items-center">
                 <div className="col-md-6 col-12">
                     <div className="img ">
                         <img className='w-100' src={img} alt="" /> 

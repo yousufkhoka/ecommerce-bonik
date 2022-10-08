@@ -47,7 +47,7 @@ const Head = () => {
     
 
     return (
-        <>
+      
         <div className="head">
             <div className="container-fluid">
                 <div className="row justify-content-between ">
@@ -87,7 +87,7 @@ const Head = () => {
                         ></i>  : <i style={{color:'#ffff'}} class="fa-solid fa-angle-down" 
                         ></i> }
                                  {showcountryMoney && <div className="countryMoney-component">
-                                <CountyMoney countrys={country} hendlesetMoney={hendlesetMoney}></CountyMoney>
+                                <CountyMoney countrys={country}  hendlesetMoney={hendlesetMoney}></CountyMoney>
                                </div>}
                             </div>
                         </div>
@@ -98,7 +98,7 @@ const Head = () => {
             
 
         </div>
-        </>
+       
     );
 };
 

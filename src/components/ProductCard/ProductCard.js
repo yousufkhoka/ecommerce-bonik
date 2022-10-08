@@ -8,11 +8,12 @@ import StarRoundedIcon from '@mui/icons-material/StarRounded';
 import StarBorderRoundedIcon from '@mui/icons-material/StarBorderRounded';
 import CountButton from '../CountButton/CountButton';
 import ProductDetailModal from '../ProductDetailModal/ProductDetailModal';
+import { Link } from 'react-router-dom';
 
 
 
   const  ProductCard = (props)=> {
-     const {img,name,price} = props.product
+     const {img,name,price,id} = props.product
      const [open, setOpen] = React.useState(false);
      const handleOpen = () => setOpen(true);
      const handleClose = () => setOpen(false);
@@ -24,7 +25,7 @@ import ProductDetailModal from '../ProductDetailModal/ProductDetailModal';
     <>
     <Card sx={{ }} className='product-card my-3 me-3'>
       <CardContent>
-        <div className="card-top d-flex justify-content-between">
+        <div className="card-top d-flex justify-content-between ">
         <div>
         <span>30% off</span>
         </div>
@@ -35,11 +36,12 @@ import ProductDetailModal from '../ProductDetailModal/ProductDetailModal';
         </ul>
         </div>
         </div>
-        <img className='w-100' src={img} alt="" />
+        <Link to={`/productDetails/${id}`}> <img className='w-100' src={img} alt="" /></Link>
+       
       </CardContent>
       <CardContent className='d-flex justify-content-between'>
       <div className="buttom-left pb-2">
-        <p>{name}</p>
+        <p>{name.substring(0,20)}...</p>
         <ul className='d-flex '>
           <li><StarRoundedIcon style={{color:'#FFCD4E', fontSize:'18px'}} /></li>
           <li><StarRoundedIcon style={{color:'#FFCD4E', fontSize:'18px'}} /></li>

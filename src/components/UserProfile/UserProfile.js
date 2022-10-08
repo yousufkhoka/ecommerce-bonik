@@ -1,10 +1,21 @@
-import React from 'react';
 
-const UserProfile = () => {
+import Header from '../Header/Header';
+
+
+const UserProfile = ({state,user}) => {
+    const hendleState = ()=> console.log(state)
+console.log(user,state)
+    
     return (
+        <>
+        <Header></Header>
+        
         <div>
-            <h1>user profile page</h1>
+            <button onClick={ hendleState}>click me</button>
+            <h1>user component {state.name}</h1>
+            <h1>user contianer {user.name}</h1>
         </div>
+        </>
     );
 };
 

@@ -11,6 +11,7 @@ const style = {
   left: '50%',
   transform: 'translate(-50%, -50%)',
   border: '2px solid transparent',
+  outline:'none'
   
   
 };
@@ -22,7 +23,7 @@ export default function SignInModul({open , handleClose}) {
 
   return (
     
-    
+   
       <Modal
         open={open}
         onClose={handleClose}

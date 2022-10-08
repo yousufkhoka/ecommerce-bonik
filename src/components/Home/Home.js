@@ -8,12 +8,15 @@ import CardGiftcardIcon from '@mui/icons-material/CardGiftcard';
 import MicNoneIcon from '@mui/icons-material/MicNone';
 import HealthAndSafetyOutlinedIcon from '@mui/icons-material/HealthAndSafetyOutlined';
 import Shop from '../Shop/Shop';
+import Header from '../Header/Header';
 
 
 
 const Home = () => {
    
     return (
+        <>
+        <Header></Header>
         <div className='home-page'>
         <section className='Home-heading px-md-4' style={{paddingBottom:'130px'}} >
             <div className="container-fluid">
@@ -44,13 +47,9 @@ const Home = () => {
         <div className="container-fluid">
         <Shop></Shop>
         </div>
-        
-        
         </section> 
-      
-
-
         </div>
+        </>
     );
 };
 

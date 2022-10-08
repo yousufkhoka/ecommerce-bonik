@@ -145,6 +145,7 @@ padding-left: 0;
     border-color:#E94560;
 }
 .outline-button{
+    position: relative;
    width: 45px;
    height: 45px;
    background:#F3F5F9 ;
@@ -243,6 +244,10 @@ padding-left: 0;
  .left-navbart ul li ul{
     z-index: 9999;
  }
+.head ul{
+    padding-left: 0 !important;
+    padding-bottom: 0 !important;
+}
 /* font-family: 'Open Sans', sans-serif; */
 /* font-family: 'Roboto', sans-serif; */
 

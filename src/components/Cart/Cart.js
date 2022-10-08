@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { productContext } from '../../App';
 import ButtonNavGroup from '../ButtonNavGroup/ButtonNavGroup';
 import CartCard from '../CartCard/CartCard';
+import Header from '../Header/Header';
 import './Cart.css'
 
 
@@ -59,9 +60,11 @@ const Cart = () => {
       },[])
       
 
-  
+   
 
     return (
+        <>
+        <Header></Header>
         <div className='container-fluid cart px-4 py-4' style={{background:'#F6F9FC'}}>
            <div className="row">
                 <div className="col-xl-6 col-sm-6 col-10">
@@ -178,6 +181,7 @@ const Cart = () => {
                 </div>
             </div>
         </div>
+        </>
     );
 };
 

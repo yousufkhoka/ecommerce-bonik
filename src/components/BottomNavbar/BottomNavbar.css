@@ -1,0 +1,20 @@
+.BottomNavbar{
+    background-color:#ffff;
+}
+.BottomNavbar ul{
+    padding-left: 0;
+    padding-bottom: 0;
+}
+.BottomNavbar ul li{
+   color:'#0F3460' !important;
+   padding:3px;
+
+}
+.BottomNavbar ul li a{
+    color:#0F3460;
+    text-decoration: none;
+}
+
+.BottomNavbar ul li .active{
+    color: #E94560;
+}

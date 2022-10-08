@@ -1,14 +1,44 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import './Header.css';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined';
 import SignInModul from '../SignInModul/SignInModul';
 import { Link } from 'react-router-dom';
+import { productContext } from '../../App';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import AppsIcon from '@mui/icons-material/Apps';
+import Button from '@mui/material/Button';
+import CategoryLIst from '../CategoryList/CategoryLIst';
+
+ 
+const cartlenghtStyle = {
+    position:'absolute',
+    top:'-10px',
+    right:'0',
+    background: '#E94560',
+    height:'21px',
+    width:'21px',
+    borderRadius:'100%',
+    color:'#ffff',
+    fontSize:'15px',
+    display:'flex',
+    justifyContent:'center',
+    alignItems:'center'
+}
 
 
-const Search = () => {
+
+
+
+
+
+
+const Search = ({fixedTop}) => {
+    const [categoryShow , setCategoryShow] = useState(false)
     const [category , setCategory] = useState({name:'All Categories'})
     const [showcategory ,setShowcategory ] = useState(false)
-    const [open, setOpen] = React.useState(false);
+    const [open, setOpen] = useState(false);
+    const [cardProducts ,setCartProducts]  = useContext(productContext)
     const categories = [ 'All Categories', 'Car','Clothes', 'Electronics','Laptop','Camera','Toys']
    
 const hendleCaterory = cate =>setCategory({name:cate})
@@ -20,13 +50,18 @@ const handleClose = () => setOpen(false);
         <div className='seach-header'>
             <div className="contaner">
                 <div className="row mx-1 mx-sm-4 align-items-center justify-content-between">
-                    <div className="col-lg-2 d-none d-lg-flex">
+                    <div className="col-lg-2 d-none d-lg-flex NavButton">
                         <Link to='/'>
                         <img src="https://bonik-react.vercel.app/assets/images/logo.svg" alt="" />
-                    
                         </Link>
+                         {fixedTop !==''&& <div>
+                          <Button onClick={()=> setCategoryShow(!categoryShow)} style={{color:'#7d879c', background:'#F6F9FC'}}><AppsIcon style={{color:'#000'}} /><ExpandMoreIcon  /> </Button>
+                        {categoryShow && <CategoryLIst/>}
+                            
+                          </div>}
+                       
                     </div>
-                    <div className="col-lg-8 text-center">
+                    <div className="col-lg-7 text-center">
                        <div className="seach-bar">
                        <i class="fa-solid fa-magnifying-glass searchBar"></i>
                         <input type="text" placeholder='Search and hit enter' className=''/>
@@ -44,7 +79,12 @@ const handleClose = () => setOpen(false);
                     </div>
                     <ul className="col-lg-2 text-end d-none d-lg-flex justify-content-end gap-4">
                         <li  className='outline-button' onClick={()=>handleOpen(true)}><PersonOutlineIcon></PersonOutlineIcon></li>
-                        <li  className='outline-button'><LocalMallOutlinedIcon></LocalMallOutlinedIcon></li>
+                        <Link to ='/cart'>
+                        <li className='outline-button' style={{color:'#000'}} >
+                            <span style={cartlenghtStyle}>{cardProducts.length }</span>
+                            <LocalMallOutlinedIcon/></li>
+                        </Link>
+                       
                     </ul>
                 </div>
             </div>

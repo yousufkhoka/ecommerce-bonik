@@ -7,6 +7,7 @@ import AddRoundedIcon from '@mui/icons-material/AddRounded';
 
 const CountButton = (props) => {
     const [cardProducts , setCartProducts ] = useContext(productContext)
+    
 
     const hendleIncrement = product =>{
         const toBeAdedId = product.id
@@ -14,13 +15,9 @@ const CountButton = (props) => {
 
         const sameProduct = cardProducts.find(pd => pd.id === toBeAdedId)
 
-        if(sameProduct){
-          const count =  sameProduct.quantity + 1  
-          sameProduct.quantity = count
-        
-          const othres = cardProducts.filter(pd => pd.id !== toBeAdedId)
-          
-          setCartProducts([  sameProduct , ...othres])
+        if(sameProduct){ 
+          product.quantity = product.quantity + 1
+          setCartProducts([  ...cardProducts])
         }
         else{
             product.quantity = 1
@@ -29,18 +26,14 @@ const CountButton = (props) => {
     }
     const hendleDiccrement = product =>{
         const toBeAdedId = product.id
-        console.log(product)
+       
 
         const sameProduct = cardProducts.find(pd => pd.id === toBeAdedId)
 
         if(props.product.quantity >= 1){
-          const count =  sameProduct.quantity - 1  
-          sameProduct.quantity = count
-        
-          const othres = cardProducts.filter(pd => pd.id !== toBeAdedId)
-          
-          setCartProducts([  sameProduct , ...othres])
-
+          const count =  product.quantity - 1  
+          product.quantity = count          
+          setCartProducts([  ...cardProducts])
           if(count === 0 ){
             const othres = cardProducts.filter(pd => pd.id !== toBeAdedId)
           setCartProducts([...othres])
